@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wise Luxury Website</title>
+    <link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://app.dante-ai.com/bubble-embed.js?kb_id=ac18aba3-0d64-4564-9a9c-5cb74303e309&token=9d3e51cf-c861-44b2-92eb-69b490171366&modeltype=gpt-4-omnimodel-mini&tabs=false"></script>
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-ld navbar-light bg-white shadow-sm">
+            <div class="container">
+                 <img class="logo" src="logo.png" alt="">
+                  <a class="navbar-brand fw-bold" href="#">
+                    <span class="text-primary">Wise</span> Luxury Company
+                  </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" 
+                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                           <a class="nav-link active" href="#hero">Home</a>
+                            </li>
+
+                             <li class="nav-item">
+                            <a class="nav-link" href="#properties">Properties</a>
+                             </li>
+
+                           <li class="nav-item">
+                          <a class="nav-link" href="#team">Agents</a>
+                           </li>
+                          <li class="nav-item">
+                           <a class="nav-link" href="#contact">Contact</a>
+                         </li>  
+                         <button id="addPropertyBtn" class="nav-btn">Add Property</button>
+
+
+                        </ul>
+
+                    </div>
+            </div>
+
+        </nav>
+
+    </header>
+    
+<section id="hero" class="d-flex align-items-center justify-content-center position-relative">
+  <div class="overlay"></div>
+
+  <div class="container text-center text-white" data-aos="fade-up">
+    <h2 class="display-4">Your Dream Property Awaits</h2>
+    <p class="lead mb-4">Explore top listings, trusted agents, and the best deals in real estate.</p>
+
+    <a href="#properties" class="btn btn-primary btn-lg me-2">Browse Listings</a>
+    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+  </div>
+</section>
+<section id="gallery-contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="row g-2">
+          <div class="col-6 mb-2">
+            <img src="1.jpg" class="img-fluid rounded" alt="Property 1">
+          </div>
+          <div class="col-6 mb-2">
+            <img src="2.jpg" class="img-fluid rounded" alt="Property 2">
+          </div>
+          <div class="col-6">
+            <img src="7.jpg" class="img-fluid rounded" alt="Property 3">
+          </div>
+          <div class="col-6">
+            <img src="12.jpg" class="img-fluid rounded" alt="Property 4">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h3>Send Us a Message</h3>
+        <p>Fill in the form below and we will get back to you shortly.</p>
+
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="form-message" class="mt-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="properties" class="py-5">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h3>Featured Properties</h3>
+      <p>Check out some of our top listings and services</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="13.jpg" class="card-img-top" alt="Property 1">
+          <span class="price-badge">$2.5M</span>
+          <div class="card-body">
+            <h5 class="card-title">Luxury Apartment</h5>
+            <p class="card-text">Located in the heart of the city with modern amenities.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="11.jpg" class="card-img-top" alt="Property 2">
+          <span class="price-badge">$1.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Family House</h5>
+            <p class="card-text">Spacious and comfortable living for your entire family.</p>
+             <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="office.jpg" class="card-img-top" alt="Property 3">
+          <span class="price-badge">$3.2M</span>
+          <div class="card-body">
+            <h5 class="card-title">Office Space</h5>
+            <p class="card-text">Modern office space ideal for startups and professionals.</p>
+             <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="9.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.2M</span>
+          <div class="card-body">
+            <h5 class="card-title">Luxury Villa</h5>
+            <p class="card-text">Located in the heart of the city with modern amenities.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="6.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$42.5M</span>
+          <div class="card-body">
+            <h5 class="card-title">Luxury family mansion</h5>
+            <p class="card-text">Spacious and cozy family home with a beautiful garden and plenty of room for everyone.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="17.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$22.7M</span>
+          <div class="card-body">
+            <h5 class="card-title">Beachside Villa</h5>
+            <p class="card-text">Elegant villa by the beach offering serenity, privacy, and luxurious living</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="18.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.9M</span>
+          <div class="card-body">
+            <h5 class="card-title">Cozy Suburban Home</h5>
+            <p class="card-text">A peaceful retreat with a charming garden and ample space for family activities.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="7.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Luxury Villa with Pool</h5>
+            <p class="card-text">A private oasis featuring a swimming pool, landscaped garden, and premium finishes throughout.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="8.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.1M</span>
+          <div class="card-body">
+            <h5 class="card-title">Charming Countryside House</h5>
+            <p class="card-text">Escape the hustle and enjoy serene surroundings, fresh air, and picturesque views.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="18.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.9M</span>
+          <div class="card-body">
+            <h5 class="card-title">Sunset Villa</h5>
+            <p class="card-text">A modern villa with floor-to-ceiling windows, a private pool, and panoramic sunset views.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="19.webp" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Maplewood Mansion</h5>
+            <p class="card-text">Spacious two-story family home with a beautifully landscaped garden and classic brick exterior.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="20.jpeg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.1M</span>
+          <div class="card-body">
+            <h5 class="card-title">Cityscape Penthouse</h5>
+            <p class="card-text">Sleek apartment on the top floor with floor-to-ceiling glass, rooftop terrace, and city skyline views.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="21.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.9M</span>
+          <div class="card-body">
+            <h5 class="card-title">Ocean Breeze Retreat</h5>
+            <p class="card-text">Elegant beachfront villa with airy rooms, wide terraces, and a private path to the sea.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="23.jpeg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Willow Creek House</h5>
+            <p class="card-text">Cozy suburban home with a large backyard, white picket fence, and charming architectural details.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="22.webp" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.1M</span>
+          <div class="card-body">
+            <h5 class="card-title">Hillside Haven</h5>
+            <p class="card-text">Luxury home perched on a hillside, offering stunning valley views and an infinity pool.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="24.webp" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Willow Creek House</h5>
+            <p class="card-text">Cozy suburban home with a large backyard, white picket fence, and charming architectural details.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="25.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.1M</span>
+          <div class="card-body">
+            <h5 class="card-title">Hillside Haven</h5>
+            <p class="card-text">Luxury home perched on a hillside, offering stunning valley views and an infinity pool.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="26.webp" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Willow Creek House</h5>
+            <p class="card-text">Cozy suburban home with a large backyard, white picket fence, and charming architectural details.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="28.avif" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Willow Creek House</h5>
+            <p class="card-text">Cozy suburban home with a large backyard, white picket fence, and charming architectural details.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="29.webp" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$32.1M</span>
+          <div class="card-body">
+            <h5 class="card-title">Hillside Haven</h5>
+            <p class="card-text">Luxury home perched on a hillside, offering stunning valley views and an infinity pool.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="30.jpg" class="card-img-top" alt="Property 4">
+          <span class="price-badge">$28.3M</span>
+          <div class="card-body">
+            <h5 class="card-title">Willow Creek House</h5>
+            <p class="card-text">Cozy suburban home with a large backyard, white picket fence, and charming architectural details.</p>
+            <div class="d-flex justify-content-between align-items-center">
+        <a href="tel:+250792633097" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-telephone-fill"></i> Call Now
+        </a>
+        <small class="text-muted">+250792633097</small>
+      </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="properties">
+  <div class="section-title">
+    <h2>Latest Properties on Market</h2>
+    <p>Discover the newest homes available for sale</p>
+  </div>
+  <div id="propertyList" class="properties"></div>
+</section>
+
+<section id="cta" class="cta-section text-white">
+  <div class="container text-center">
+    <h2 class="cta-title"> If you are ready to Find Your Dream Home?</h2>
+    <p class="cta-text">
+      Call us now to book a visit, schedule a property tour, or talk to one of our professional agents today.
+    </p>
+
+    <div class="cta-buttons mt-4">
+      <a href="tel:+250788123456" class="btn btn-light btn-lg me-3">
+        <i class="bi bi-telephone-fill"></i> Call Now
+      </a>
+
+      <a href="https://wa.me/250792633097" target="_blank" class="btn btn-success btn-lg">
+        <i class="bi bi-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+
+    <div class="cta-phone mt-3">
+      <span>+250792633097</span>
+    </div>
+  </div>
+</section>
+<section id="team" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3>Meet Our Team</h3>
+      <p>Trusted professionals ready to help you find your perfect home</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="team-card text-center">
+          <img src="ceo.png" alt="CEO" class="team-img">
+          <h5 class="mt-3">Serge Wise</h5>
+          <p class="role">Founder & CEO</p>
+
+          <a href="tel:+250788123456" class="contact-link">
+            +250792633097
+          </a>
+
+          <a href="https://wa.me/250788123456" target="_blank" class="btn btn-success btn-sm mt-2">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="team-card text-center">
+          <img src="co-founder.png" alt="Agent" class="team-img">
+          <h5 class="mt-3">Emmanuel.A</h5>
+          <p class="role">Co-founder</p>
+
+          <a href="tel:+250780987654" class="contact-link">
+            +250792633097
+          </a>
+
+          <a href="https://wa.me/250780987654" target="_blank" class="btn btn-success btn-sm mt-2">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="team-card text-center">
+          <img src="agent2.png" alt="Agent" class="team-img">
+          <h5 class="mt-3">Lilian.G</h5>
+          <p class="role">Senior Property Agent</p>
+
+          <a href="tel:+250781654321" class="contact-link">
+            +250792633097
+          </a>
+
+          <a href="https://wa.me/250781654321" target="_blank" class="btn btn-success btn-sm mt-2">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="team-card text-center">
+          <img src="agent1.png" alt="Agent" class="team-img">
+          <h5 class="mt-3">Divine.N</h5>
+          <p class="role">Property Consultant</p>
+
+          <a href="tel:+250780987654" class="contact-link">
+            +250792633097
+          </a>
+
+          <a href="https://wa.me/250780987654" target="_blank" class="btn btn-success btn-sm mt-2">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>What Our Clients Say</h2>
+      <p>Real experiences from happy homeowners</p>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="testimonial-card text-center">
+            <img src="ken.jpg" class="testimonial-img" alt="Client">
+            <p class="testimonial-text">
+              “Wise Luxury Company helped me find my dream home in just two weeks.
+              The process was smooth, transparent, and professional.”
+            </p>
+            <h4>Benjamin</h4>
+            <span>Home Buyer</span>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <img src="grace.avif" class="testimonial-img" alt="Client">
+            <p class="testimonial-text">
+              “Very trustworthy agents! They guided me through every step and
+              negotiated the best price for my property.”
+            </p>
+            <h4>Grace N.</h4>
+            <span>Property Investor</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <img src="pacfique.webp" class="testimonial-img" alt="Client">
+            <p class="testimonial-text">
+              “Professional service, beautiful listings, and honest communication.
+              I highly recommend Wise Luxury Company.”
+            </p>
+            <h4>William</h4>
+            <span>Villa Owner</span>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<div id="propertyModal" class="modal">
+  <form id="propertyForm">
+    <h2>Add Property</h2>
+
+    <input type="file" id="image" accept="image/*" required>
+    <input type="text" id="price" placeholder="Price" required>
+    <textarea id="description" placeholder="Description" required></textarea>
+
+    <button class="btn btn-primary" type="submit">Post Property</button>
+    <button type="button" id="closeModal">Cancel</button>
+  </form>
+</div>
+
+<footer class="bg-dark text-white pt-5" id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="logo.png" alt="Wise Luxury Company" class="mb-3" style="width:150px;">
+        <p>
+          Wise Luxury Company provides premium properties and trustworthy agents 
+          to help you find your dream home with ease and confidence.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#hero" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#properties" class="text-white text-decoration-none">Properties</a></li>
+          <li><a href="#team" class="text-white text-decoration-none">Agents</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Contact Us</h5>
+        <p> +250 788 123 456</p>
+        <p>✉️ info@wiseluxury.com</p>
+        <p>Kigali, Rwanda</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="border-top border-secondary">
+
+    <div class="text-center py-3">
+      &copy; 2026 Wise Luxury Company. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init({
+    publicKey: '974oVxfGhs0f1KwVF'  // Replace with your actual EmailJS public key
+  });
+</script> 
+  <script src="contact-form.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
