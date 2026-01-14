@@ -624,16 +624,30 @@
   </div>
 </section>
 <div id="propertyModal" class="modal">
-  <form id="propertyForm">
-    <h3>Add Property</h3>
+ <form id="propertyForm" class="property-form">
+  <h3>Add New Property</h3>
 
+  <div class="form-group">
+    <label for="image">Property Image</label>
     <input type="file" id="image" accept="image/*" required>
-    <input type="text" id="price" placeholder="Price" required>
-    <textarea id="description" placeholder="Description" required></textarea>
+  </div>
 
-    <button class="btn btn-primary" type="submit">Post Property</button>
-    <button type="button" id="closeModal">Cancel</button>
-  </form>
+  <div class="form-group">
+    <label for="price">Price (USD) in (M)</label>
+    <input type="number" id="price" placeholder="e.g.$23.5M" required>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Property Description</label>
+    <textarea id="description" rows="4" placeholder="Describe the property..." required></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Post Property</button>
+    <button type="button" id="closeModal" class="btn btn-secondary">Cancel</button>
+  </div>
+</form>
+
 </div>
 
 <footer class="bg-dark text-white pt-5" id="contact">
