@@ -7,6 +7,7 @@ body {
   padding: 10px 15px;
 }
 
+
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
   color: #0d6efd;
@@ -17,7 +18,7 @@ body {
 }
 #hero {
   height: 100vh; 
-  background: url('18.webp') center center / cover no-repeat;
+  background: url('images/18.webp') center center / cover no-repeat;
   position: relative;
   color: #fff;
   display: flex;
@@ -31,7 +32,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.55); /* semi‑dark */
+  background-color: rgba(0, 0, 0, 0.55);
   z-index: 0;
 }
 
@@ -57,11 +58,15 @@ body {
   font-size: 1.1rem;
   color: #6c757d;
 }
+.card-img-top{
+  height:300px;
+}
+
 .price-badge {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #ff512f; /* orange/red color */
+  background-color: #ff512f;
   color: #fff;
   padding: 0.4rem 0.8rem;
   font-weight: 600;
@@ -97,7 +102,7 @@ body {
   color: #000;
 }
 .cta-section {
-  background: url(27.jpg)  center / cover no-repeat;
+  background: url('images/27.jpg')  center / cover no-repeat;
   padding: 90px 20px;
   color: white;
 }
@@ -209,7 +214,7 @@ footer h5 {
 }
 
 footer a:hover {
-  color: #0d6efd; /* Bootstrap primary blue on hover */
+  color: #0d6efd;
 }
 
 footer p {
@@ -242,7 +247,6 @@ footer i:hover {
   border-radius: 10px;
 }
 
-/* PROPERTY CARDS */
 .properties-latest{
   display: flex;
   gap: 20px;
@@ -286,7 +290,6 @@ footer i:hover {
   width: 300px;
   border-radius: 10px;
 }
-/* PROPERTIES SECTION TITLE */
 .section-title {
   text-align: center;
   margin-bottom: 40px;
